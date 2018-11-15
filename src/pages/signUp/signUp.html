@@ -1,0 +1,32 @@
+<ion-content>
+    <div class="logo"><img src="./assets/imgs/Logo_company.png" alt=""></div>
+    <div class="content">
+        <h3>Sign Up</h3>
+        <div>
+            <ion-item>
+                <ion-label color="primary" fixed>First Name</ion-label>
+                <ion-input type="text" placeholder="Keval"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary" fixed>Last Name</ion-label>
+                <ion-input type="text" placeholder="Baxi"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary" fixed>Phone Number</ion-label>
+                <ion-input type="phone" placeholder="(541) 754-3010"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary" fixed>Email</ion-label>
+                <ion-input type="email" placeholder="Kbaxi@codal.com"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary" fixed>Password</ion-label>
+                <ion-input type="password" placeholder="&#183;&#183;&#183;&#183;&#183;&#183;"></ion-input>
+            </ion-item>
+            <button class="main_button primary" (click)="signUp()">Sign Up</button>
+
+        </div>
+        <div> <button class="main_button" (click)="signIn()">Already have an account? <strong>Sign In</strong></button></div>
+    </div>
+
+</ion-content>

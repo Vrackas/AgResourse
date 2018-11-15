@@ -1,0 +1,15 @@
+<ion-content>
+
+    <div *ngIf="list.length" class="list_block">
+        <!--test-->
+        <div *ngFor="let item of list" class="{{item.img}}">
+            <h3>{{item.title}}</h3>
+            <ion-icon  name="arrow-forward"></ion-icon>
+        </div>
+
+    </div>
+    <div *ngIf="!list.length" class="add_block">
+        <p>You do not have any subscriptions yet</p>
+    <button class="main_button">Add Subscriptions</button></div>
+
+</ion-content>

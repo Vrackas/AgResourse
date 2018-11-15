@@ -1,0 +1,114 @@
+page-subscription {
+  ion-content {
+
+    background: {
+      image: url("../assets/imgs/Bitmap.png") !important;
+      size: cover;
+    }
+    color: white;
+    .content {
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, .5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 40px;
+      }
+      ion-slides {
+        //width: 150%;
+        //margin-left: 25%;
+        height: 350px;
+        .swiper-container {
+          .swiper-wrapper {
+            ion-slide {
+              transition: 1.2s all, .8s scale;
+              transform: scale(1);
+              h2{
+                margin-top: -40px ;
+                color: white;
+              }
+              p {
+
+                color: white;
+                text-align: center;
+                font-size: 8px;
+                width: 160%;
+                margin-left: -30%;
+                margin-top: 20px;
+                font-weight:300;
+                line-height: 13px;
+                transition: .5s all;
+                opacity: 0;
+              }
+            }
+            ion-slide.swiper-slide-active {
+              p {
+                opacity: 1;
+              }
+              transform: scale(1.8);
+
+            }
+            ion-slide.swiper-slide-prev {
+
+              transform: scale(.8) translateX(-40px) translateY(-40px);
+              p {
+                opacity: 0;
+              }
+            }
+            ion-slide.swiper-slide-next {
+              transform: scale(.8) translateX(40px) translateY(-40px);
+              p {
+                opacity: 0;
+              }
+            }
+
+          }
+          .swiper-pagination {
+            display: none;
+          }
+        }
+      }
+      div:nth-child(3){
+        width: 100%;
+        max-width: 382px;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        div{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          p{
+            color: white;
+            font-size: 18px;
+            margin: 12px 0;
+          }
+          button{
+            font-size: inherit;
+            padding: inherit;
+            width: 90px;
+            height: 36px;
+          }
+        }
+        div:nth-child(3){
+          padding: 0;
+          button{
+            background: rgb(4,104,57);
+          }
+        }
+      }
+      button:nth-child(4){
+        width: calc(100% - 32px);
+        position: absolute;
+        max-width: 340px;
+        bottom: 20px;
+
+      }
+    }
+  }
+}

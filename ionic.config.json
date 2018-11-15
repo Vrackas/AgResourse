@@ -1,0 +1,7 @@
+{
+  "name": "AGResourse",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

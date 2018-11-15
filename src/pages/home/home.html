@@ -1,0 +1,21 @@
+<ion-content>
+    <div class="logo"><img src="./assets/imgs/Logo_company.png" alt=""></div>
+    <div class="content">
+        <h3>Sign In</h3>
+        <div>
+            <ion-item>
+                <ion-label color="primary" fixed>Email</ion-label>
+                <ion-input type="email" placeholder="Kbaxi@codal.com"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary" fixed>Password</ion-label>
+                <ion-input type="password" placeholder="&#183;&#183;&#183;&#183;&#183;&#183;"></ion-input>
+            </ion-item>
+            <a>Forgot Password?</a>
+            <button class="main_button primary" (click)="loggedin()">Sign In</button>
+
+        </div>
+        <div> <button class="main_button " (click)="signUp($event, item)">Don`t have an account? <strong>Sign Up</strong></button></div>
+    </div>
+
+</ion-content>

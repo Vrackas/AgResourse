@@ -1,0 +1,20 @@
+//variables
+//$dark_grey: #303030;
+
+//components
+.main_button{
+  padding: 16px;
+  color: white;
+  background: #046839;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 200;
+  &.primary{
+    background: #f9a32c;
+  }
+  &.shadow{
+    background: rgba(0,0,0, .5);
+    font-weight: 300;
+  }
+
+}

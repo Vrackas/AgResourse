@@ -1,0 +1,106 @@
+page-addSubscriptions {
+  ion-content {
+    .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #303030;
+      h2 {
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      h3 {
+
+        text-align: center;
+        font-size: 14px;
+        span {
+          color: #046839;
+          font-weight: bold;
+        }
+      }
+      ion-slides {
+        height: 300px;
+        .swiper-container {
+          .swiper-wrapper {
+            ion-slide {
+              transition: 1.2s all, .8s scale;
+              transform: scale(1);
+              h2 {
+                margin-top: -40px;
+                color: white;
+              }
+              p {
+
+                text-align: center;
+                font-size: 7px;
+                width: 160%;
+                margin-left: -30%;
+                margin-top: 11px;
+                font-weight: 300;
+                line-height: 11px;
+                transition: .5s all;
+                opacity: 0;
+              }
+            }
+            ion-slide.swiper-slide-active {
+              p {
+                opacity: 1;
+              }
+              transform: scale(1.8);
+
+            }
+            ion-slide.swiper-slide-prev {
+
+              transform: scale(.8) translateX(-40px) translateY(-40px);
+              p {
+                opacity: 0;
+              }
+            }
+            ion-slide.swiper-slide-next {
+              transform: scale(.8) translateX(40px) translateY(-40px);
+              p {
+                opacity: 0;
+              }
+            }
+
+          }
+          .swiper-pagination {
+            display: none;
+          }
+        }
+      }
+      div:nth-child(5) {
+        width: 100%;
+        max-width: 382px;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        div {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          p {
+            color: #303030;
+            font-size: 18px;
+            margin: 12px 0;
+          }
+          button {
+            font-size: inherit;
+            padding: inherit;
+            width: 90px;
+            height: 36px;
+          }
+        }
+        div:nth-child(3) {
+          padding: 0;
+          button {
+            background: rgb(4, 104, 57);
+          }
+        }
+      }
+
+    }
+  }
+
+}
