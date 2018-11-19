@@ -8,23 +8,23 @@ import {NavController} from 'ionic-angular';
 export class MySubscriptionsPage {
 
     list: any = [
-            // {
-            //     title: 'All Subscriptions',
-            //     img: 'allSubscriptions'
-            //
-            // },
-            // {
-            //     title: 'Daily',
-            //     img: 'daily'
-            // },
-            // {
-            //     title: 'AGResource LATAM',
-            //     img: 'latam'
-            // },
-            // {
-            //     title: 'Climate Impact',
-            //     img: 'climate'
-            // }
+            {
+                title: 'All Subscriptions',
+                img: 'allSubscriptions'
+
+            },
+            {
+                title: 'Daily',
+                img: 'daily'
+            },
+            {
+                title: 'AGResource LATAM',
+                img: 'latam'
+            },
+            {
+                title: 'Climate Impact',
+                img: 'climate'
+            }
     ];
 
 

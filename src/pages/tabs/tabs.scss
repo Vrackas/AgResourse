@@ -43,6 +43,10 @@ page-tabs {
         left: 0;
         bottom: -5px;
       }
+      .tab-highlight{
+        background: #046839 !important;
+        height: 2.3px;
+      }
     }
     .tabbar:after{
       display: none;

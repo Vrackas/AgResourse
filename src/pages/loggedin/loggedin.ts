@@ -3,6 +3,7 @@ import {NavController} from 'ionic-angular';
 import {AddSubscriptionsPage} from "../addSubscriptions/addSubscriptions";
 import {MySubscriptionsPage} from "../mySubscriptions/mySubscriptions";
 import {TabsPage} from "../tabs/tabs";
+import {HomePage} from "../home/home";
 
 
 @Component({
@@ -15,6 +16,10 @@ export class LoggedinPage {
     constructor(public navCtrl: NavController) {
 
     }
+
+    logout(){
+            this.navCtrl.push(HomePage)
+        }
 
     // mySubscriptions(){
     //     this.navCtrl.push(MySubscriptionsPage)

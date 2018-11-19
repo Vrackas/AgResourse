@@ -15,7 +15,7 @@ export class SignUpPage {
     }
 
     signIn() {
-        this.navCtrl.pop(HomePage);
+        this.navCtrl.push(HomePage);
     }
 
     signUp(){
