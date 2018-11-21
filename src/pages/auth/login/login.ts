@@ -1,15 +1,15 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {SignUpPage} from "../signUp/signUp";
-import {LoggedinPage} from "../loggedin/loggedin";
-import {TabsPage} from "../tabs/tabs";
+import {TabsPage} from "../../templates/tabs/tabs";
+
 
 @Component({
-    selector: 'page-home',
-    templateUrl: 'home.html',
-    // styleUrls: ['home.scss']
+    selector: 'page-login',
+    templateUrl: 'login.html',
+
 })
-export class HomePage {
+export class LoginPage {
 
     constructor(public navCtrl: NavController) {
 
@@ -21,7 +21,7 @@ export class HomePage {
         });
     }
 
-    loggedin(event,item){
+    signIn(event,item){
         this.navCtrl.push(TabsPage, {
             item: item
         });

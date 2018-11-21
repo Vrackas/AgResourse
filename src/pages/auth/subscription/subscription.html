@@ -40,19 +40,3 @@
     </div>
 </ion-content>
 
-<div class="main-content" style="max-width: 800px;
-     margin: 0 auto;">
-
-    <div class="col-md-9" style="height: 70vh; display: flex; flex-direction: row; justify-content: center">
-
-        <div>
-            <p>Stream provided by : {{user.name}}</p>
-            <video id="player" class="video-js vjs-default-skin" height="360" width="640" controls preload="none">
-                <source src="https://streamserverdomen.xyz/hls/{{stream_key}}.m3u8" type="application/x-mpegURL"/>
-            </video>
-        </div>
-
-
-        <div class="chat"></div>
-    </div>
-</div>

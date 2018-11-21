@@ -17,7 +17,10 @@
 
 ion-app{
   font-family: 'Fira Sans', sans-serif !important;
+  ion-modal{
+    //height: 80% !important;
 
+  }
 }
 .ion-page{
   ion-content{
@@ -25,5 +28,24 @@ ion-app{
     .scroll-content{
       padding: 0 !important;
     }
+  }
+}
+.mymodal{
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+
+  ion-backdrop{
+    visibility: inherit;
+  }
+  .modal-wrapper{
+    top: 20vh;
+    height: 80%;
+    bottom: 0;
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+
   }
 }
